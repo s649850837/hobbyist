@@ -20,8 +20,14 @@
         <activity android:name=".pager.PagerActivity">
 
         </activity>
+        <activity android:name=".client.ClientActivity">
+
+        </activity>
         <service android:name=".service.ServiceTest">
 
+        </service>
+        <service android:name=".service.BookManagerService"
+            android:process=":remote1">
         </service>
     </application>
 

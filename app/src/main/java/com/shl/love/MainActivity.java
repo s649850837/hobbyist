@@ -22,6 +22,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.shl.love.client.ClientActivity;
 import com.shl.love.pager.PagerActivity;
 import com.shl.love.service.ServiceTest;
 
@@ -68,14 +69,15 @@ public class MainActivity extends AppCompatActivity  implements View.OnTouchList
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,"haha",Toast.LENGTH_SHORT);
-                Intent intent=new Intent(MainActivity.this,PagerActivity.class);
+//                Intent intent=new Intent(MainActivity.this,PagerActivity.class);
+                Intent intent=new Intent(MainActivity.this, ClientActivity.class);
                 startActivity(intent);
             }
         });
 
 
-        Intent intent=new Intent(this, ServiceTest.class);
-        bindService(intent,serviceConnection,BIND_AUTO_CREATE);
+//        Intent intent=new Intent(this, ServiceTest.class);
+//        bindService(intent,serviceConnection,BIND_AUTO_CREATE);
 
 
     }
